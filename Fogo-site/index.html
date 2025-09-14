@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOGO Landing</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .animated-bg {
+      min-height: 100vh;
+      background: linear-gradient(120deg, #6b21a8 0%, #ec4899 40%, #06b6d4 100%);
+      background-size: 300% 300%;
+      animation: gradientShift 12s ease infinite;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: white;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body class="animated-bg">
+
+  <!-- Banner -->
+  <div class="w-full flex justify-between items-center p-3 shadow-lg glass">
+    <div class="flex items-center gap-2 font-bold text-lg">
+      <img src="fogo-logo.png" alt="Fogo Logo" class="h-8 w-8" />
+      <span>FOGO</span>
+    </div>
+    <a
+      href="https://x.com/AbhayRakshit"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-4 py-1 rounded-full text-sm"
+    >
+      Created by @AbhayRakshit
+    </a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20">
+    <h1 class="text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-white/90 via-white/80 to-white/60">
+      Welcome to FOGO
+    </h1>
+    <p class="mt-6 text-lg max-w-2xl mx-auto text-white/90">
+      FOGO is building the next-gen decentralized data & AI infrastructure.
+    </p>
+    <div class="mt-6 flex justify-center gap-4">
+      <button class="rounded-2xl px-6 py-3 bg-white/10 hover:bg-white/20">Join Community</button>
+      <button class="rounded-2xl px-6 py-3 border border-white/30 text-white/90 hover:bg-white/10">Learn More</button>
+    </div>
+  </section>
+
+  <!-- About FOGO -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold mb-6">What is FOGO?</h2>
+    <p class="text-white/85 mb-8">
+      FOGO is a cutting-edge platform focused on decentralizing cloud, storage, and compute with AI-driven solutions. We empower developers and communities with powerful infrastructure and fair economics.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="glass shadow-lg p-6">
+        <h3 class="font-semibold text-xl mb-2">⚡ High Performance</h3>
+        <p class="text-white/70">Next-gen infrastructure designed for speed, security, and global scale.</p>
+      </div>
+      <div class="glass shadow-lg p-6">
+        <h3 class="font-semibold text-xl mb-2">🌍 Community Driven</h3>
+        <p class="text-white/70">Built with the power of people, governed by the community for fair access.</p>
+      </div>
+      <div class="glass shadow-lg p-6">
+        <h3 class="font-semibold text-xl mb-2">🤖 AI Integrated</h3>
+        <p class="text-white/70">FOGO combines decentralized systems with AI to unlock new opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold mb-10 text-center">🔥 Explore FOGO Ecosystem</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="glass p-6">
+        <h3 class="font-semibold text-xl mb-3">🚀 FOGO Launchpad</h3>
+        <p class="text-white/80">Helping new projects raise and scale with the community.</p>
+      </div>
+      <div class="glass p-6">
+        <h3 class="font-semibold text-xl mb-3">💾 FOGO Cloud</h3>
+        <p class="text-white/80">Decentralized compute & storage for AI and blockchain apps.</p>
+      </div>
+      <div class="glass p-6">
+        <h3 class="font-semibold text-xl mb-3">🎮 FOGO Arcade</h3>
+        <p class="text-white/80">A hub for blockchain mini-games and fun experiments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap -->
+  <section class="max-w-5xl mx-auto px-6 py-16 text-center">
+    <h2 class="text-4xl font-bold mb-10">📍 Roadmap</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+      <div class="glass p-6">
+        <h3 class="font-semibold text-xl mb-2">Phase 1</h3>
+        <p class="text-white/80">FOGO core infrastructure, testnet launch, and early community onboarding.</p>
+      </div>
+      <div class="glass p-6">
+        <h3 class="font-semibold text-xl mb-2">Phase 2</h3>
+        <p class="text-white/80">Mainnet release, FOGO Cloud integration, and partner ecosystem expansion.</p>
+      </div>
+      <div class="glass p-6">
+        <h3 class="font-semibold text-xl mb-2">Phase 3</h3>
+        <p class="text-white/80">FOGO NFTs, governance rollout, and community-driven dApps.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NFT Teaser -->
+  <section class="max-w-4xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-4xl font-bold mb-6">🎨 FOGO NFTs — Coming Soon</h2>
+    <p class="text-white/85 mb-8">
+      Exclusive digital collectibles that unlock community perks, early access to launches, and unique utilities inside the FOGO ecosystem.
+    </p>
+    <!-- Video instead of hidden box -->
+    <div class="mx-auto w-80 h-80 rounded-2xl glass overflow-hidden">
+  <video autoplay loop muted playsinline class="w-full h-full object-contain bg-black">
+    <source src="nft-preview.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-white/10 text-center text-white/80 text-sm">
+    © 2025 FOGO — Built with ❤️ by Abhay.
+  </footer>
+
+</body>
+</html>
